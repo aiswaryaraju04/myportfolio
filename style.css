@@ -283,19 +283,13 @@ a.nav-link{
 	transition: .5s;
 	padding: 10px;
   }
-  @media screen and (max-width: 993px) {
-	#navigation li:hover {
-	  transition: .3s;
-	  transform: scale(1);
-	  margin-left: 20px;
-	}
-  }
   
-  @keyframes fillBar {
-	to {
-	  transform: scaleX(1);
-	}
-  }
+  
+ 
+	
+	  
+	
+
   .resume{
 	background-color: var(--main-background);
   }
