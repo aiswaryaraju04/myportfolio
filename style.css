@@ -47,11 +47,7 @@ header:hover{
 	background: var(--main-header-background);
 }
 
-.logo img{
-	padding-top: 5px;
-	height: 50px;
-	cursor: pointer;
-}
+
 
 
 
@@ -314,14 +310,17 @@ a.nav-link{
   }
   
   .resume .resume-item {
-    padding: 0 0 20px 20px;
+    padding: 0 0  20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #1f5297;
-    position: relative;
+    border-left: 5px solid #1f5297;
+	position: relative;
+	
+	
+	
   }
   
   .resume .resume-item h4 {
-    line-height: 18px;
+    line-height: 45px;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -345,13 +344,13 @@ a.nav-link{
   }
   
   .resume .resume-item ul {
-	padding-left: 20px;
+	padding-left: 10px;
 	color: white;
 	font-family: var(--main-font-family);
   }
   
   .resume .resume-item ul li {
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	color : white;
 	font-family: var(--main-font-family);
   }
@@ -467,19 +466,40 @@ a.nav-link{
 	font-family: var(--main-font-family);
 }
 
+/*──── hr ─────*/
 
-
-.toggle .line1{
-	transform: rotate(-45deg) translate(-5px,6px);
+hr {
+    background: var(--main-decor-color);
+	margin: 2px;
+	height: 3px;
+	width: 150px;
+        border-radius:5px;
+	border: hidden;
+	margin-inline-start: auto;
+        margin-inline-end: auto;
 }
 
-.toggle .line2{
-	opacity: 0;
+/*────────────────── 
+     Scrollbar
+──────────────────*/
+::-webkit-Scrollbar{
+    width: 5px; 
+	background: rgba(5,5,5,1);
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 10px;
+	background: var(--main-decor-color);
+	box-shadow: inset 0 0 20px var(--main-decor-color);
+}
+::-webkit-Scrollbar-track{
+	margin-top: 80px;
+	border-radius: 10px;
 }
 
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px,-6px);
-}
+/*────────────────── 
+       footer
+──────────────────*/
+
 .footer {
     background-color: var(--main-background) ;
     color: var(--clr-accent);
@@ -497,9 +517,6 @@ a.nav-link{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 }
-/*────────────────── 
-       footer
-──────────────────*/
 
 .footer__link {
 	font-weight: var(--fw-bold);
@@ -512,8 +529,10 @@ a.nav-link{
     opacity: .7;
 }
 
-.footer__link:hover {
-    text-decoration: underline;
+.copy{
+	color: white;
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
 }
 
 
